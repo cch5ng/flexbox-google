@@ -1,0 +1,102 @@
+.container {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+header,
+main,
+footer,
+.project,
+.project-header {
+  width: 100%;
+  /* could not figure out the next prop */
+  /*flex: 1;*/
+}
+
+.banner-img,
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.name {
+  font-family: 'Slackey', cursive;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+/* center header elements mobile */
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.header-desc,
+.project,
+footer {
+  text-align: center;
+}
+
+h1,
+h3 {
+  -webkit-margin-after: 0;
+}
+
+.title,
+.project-text {
+  -webkit-margin-before: 0;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    width: 20%;
+    display: inline;
+  }
+
+  .logo-img {
+    display: inline;
+  }
+
+  .header-desc {
+    display: inline;
+    float: right;
+    width: 80%;
+    text-align: right;
+  }
+
+  .banner-img {
+    border-radius: none;
+  }
+
+  .clear-fix {
+    clear: both;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project {
+    width: 31.33%;
+    padding: 1.5%;
+  }
+
+  .project-first {
+    padding-left: 0;
+  }
+
+  .project-last {
+    padding-right: 0;
+  }
+
+}
